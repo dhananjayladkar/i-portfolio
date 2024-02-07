@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Final - Google Clone</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+  }
+  
+  .header a {
+    margin-right: 20px;
+    text-decoration: inherit;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+  }
+  
+  .header a:hover {
+    text-decoration: underline;
+  }
+  
+  .header__right {
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+  }
+  
+  .header__right .header__apps {
+    margin-right: 10px;
+  }
+  
+  
+  .mainBody {
+    flex: 1;
+    display: flex;
+    margin-top: 12%;
+    flex-direction: column;
+  }
+  
+  .mainBody img {
+    object-fit: contain;
+    height: 100px;
+  }
+  
+  /* search */
+  .search__input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 560px;
+  }
+  
+  .search__input input {
+    flex: 2;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .search__input .material-icons {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .search__buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search__buttons button {
+    margin: 5px;
+    padding: 5px 10px;
+  }
+</style>
+</head>
+<body>
+<form action="https://www.google.com/search">
+<div class="header">
+  <div></div>
+  <div class="header__right">
+    <a href="https://mail.google.com/">Gmail</a>
+    <a href="https://www.google.com/imghp">Images</a>
+    <p class="material-icons header__apps">apps</p>
+    <p class="material-icons">account_circle</p>
+  </div>
+</div>
+<div class="mainBody">
+  <img
+    src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+    alt="Google Logo"
+  />
+  <div class="search">
+    <div class="search__input">
+      <input type="text" name="q" placeholder="Search Google">
+      <p class="material-icons">mic</p>
+    </div>
+
+    <div class="search__buttons">
+      <button type="submit">Google Search</button>
+      <button type="button" onclick="window.location.href='https://doodles.google/'">I'm Feeling Lucky</button>
+    </div>
+  </div>
+</div>
+</form>
+</body>
+</html>
